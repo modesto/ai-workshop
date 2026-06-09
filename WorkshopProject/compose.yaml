@@ -1,0 +1,16 @@
+﻿services:
+  workshopproject.cli:
+    image: mcr.microsoft.com/dotnet/runtime:10.0
+    working_dir: /app
+    volumes:
+      - ./WorkshopProject.Cli/bin:/app
+    command: ["dotnet", "/app/Debug/net10.0/WorkshopProject.Cli.dll"]
+
+  workshopproject.tests:
+    image: mcr.microsoft.com/dotnet/sdk:10.0
+    working_dir: /tests
+    volumes:
+      - ./WorkshopProject.Tests/bin:/tests
+    command: ["dotnet", "vstest", "/tests/Debug/net10.0/WorkshopProject.Tests.dll"]
+
+

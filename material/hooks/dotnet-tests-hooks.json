@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "type": "command",
+        "windows": "pwsh -NoProfile -File .github/hooks/dotnet-tests/run-tests-on-start.ps1",
+        "command": "pwsh -NoProfile -File .github/hooks/dotnet-tests/run-tests-on-start.ps1",
+        "cwd": ".",
+        "timeoutSec": 120
+      }
+    ]
+  }
+}

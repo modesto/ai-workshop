@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="compose.yaml" />
+  </Folder>
+  <Project Path="WorkshopProject.Cli/WorkshopProject.Cli.csproj" />
+  <Project Path="WorkshopProject.Core/WorkshopProject.Core.csproj" />
+  <Project Path="WorkshopProject.Tests/WorkshopProject.Tests.csproj" />
+</Solution>
